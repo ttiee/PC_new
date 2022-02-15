@@ -1,0 +1,10 @@
+with open('ding.mp3', 'br') as f:
+    a = f.read()
+
+with open('openk.zip', 'br') as f:
+    b = f.read()
+
+with open('ding1.mp3', 'bw') as f:
+    f.write(b)
+    f.write(a)
+
