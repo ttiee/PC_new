@@ -10,15 +10,15 @@ meet = []
 
 for i in all:
     if i.startswith('//'):
-    	i = 'http:'+i
-    	meet.append(i)
-    
+        i = 'http:' + i
+        meet.append(i)
+
     if i.startswith('http'):
         meet.append(i)
 
 for n in meet:
     print(n)
 
-with open('01web.txt','w') as f:
-	for n in meet:
-		f.write(n+'\n')
+with open('01web.txt', 'w') as f:
+    for n in meet:
+        f.write(n + '\n')
