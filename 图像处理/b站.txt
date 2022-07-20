@@ -1,0 +1,5 @@
+you-get https://www.bilibili.com/video/BV1dV4y1E75s?spm_id_from=333.337.search-card.all.click&vd_source=47b647312b06c760f8cf6ed5404072b1
+
+ffmpeg -i 最伟大的作品.mp4 -c:v libx264 最伟大的作品pv.mp4
+
+ffmpeg -i 最伟大的作品pv.mp4 -f mp3 -ar 16000 最伟大的作品.mp3

@@ -1,0 +1,1 @@
+while True:num = int(input('请输入一个数字:'));print('十六进制为：'+hex(num)+'\n八进制为：'+oct(num)+'\n二进制为：'+bin(num)+'\n')

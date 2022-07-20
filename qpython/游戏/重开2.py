@@ -101,7 +101,7 @@ def a1():
 
 
 def a2():
-    '''性别随机选择'''
+    """性别随机选择"""
     wm = ("男孩", "女孩")
     wm1 = random.randint(0, 1)
     time.sleep(0.5)
@@ -110,7 +110,7 @@ def a2():
 
 
 def a3():
-    '''出生地随机选择'''
+    """出生地随机选择"""
     global At4
     n = random.randint(1, At4)
     if At4 >= 9:
@@ -124,7 +124,7 @@ def a3():
 
 
 def a4(t):
-    '''人生过程主程序'''
+    """人生过程主程序"""
     s = sc[:]
     s0 = sc0[:]
     s1 = sc1[:]
@@ -135,7 +135,7 @@ def a4(t):
     for age in range(1, 1501):
         if age <= 10:
             num = int((At1 + At2 + At3 + At4 + 70) * 2)
-        elif age > 10 and age <= 20:
+        elif 10 < age <= 20:
             num = int((At1 + At2 + At3 + At4 + 50) * 2)
         elif age >= 90:
             num = int(At1 + At2 + At3 + At4)
@@ -176,7 +176,7 @@ def a4(t):
             n = random.randint(0, len(s0) - 1)
             print("你" + str(age) + "岁了" + "," + s0[n])
             s0.remove(s0[n])
-        elif age > 4 and age < 7:
+        elif 4 < age < 7:
             n = random.randint(0, len(s1) - 1)
             print("你" + str(age) + "岁了" + "," + s1[n])
             s1.remove(s1[n])
@@ -200,9 +200,9 @@ def a5(a):
     print('=' * 25 + '人生评价' + '=' * 25 + '\n你总共活了{}岁'.format(a), end='，')
     if a <= 20:
         print('属于是夭折了。')
-    elif a > 20 and a <= 30:
+    elif 20 < a <= 30:
         print('英年早逝啊！')
-    elif a > 30 and a <= 50:
+    elif 30 < a <= 50:
         print('正是建功立业的时候啊。')
     elif a > 50 and a <= 70:
         print('希望下次活的更久一点')
@@ -210,7 +210,7 @@ def a5(a):
         print('寿命挺长啊！')
     elif a > 90 and a < 100:
         print('确实厉害(✪▽✪)')
-    elif a >= 100 and a < 134:
+    elif 100 <= a < 134:
         print('你简直是人生赢家!\n太厉害了(✪▽✪)!')
     elif a >= 200:
         print('还差一点就成了神仙')
@@ -222,7 +222,7 @@ def a5(a):
 
 
 def a6():
-    '''轮回程序'''
+    """轮回程序"""
     b = input('还想重开吗?  1(想) or 2(不想)\n')
     if not re.match(r'[12]$', b):
         print('请输入1或2!')

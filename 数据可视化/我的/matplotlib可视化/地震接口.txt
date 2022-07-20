@@ -1,0 +1,10 @@
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson
+
+
+
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_day.geojsonp
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_day.geojson
+
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month.geojson
+

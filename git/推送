@@ -1,0 +1,29 @@
+ git push -u PCS +master
+
+Enumerating objects: 3536, done.
+Counting objects: 100% (3536/3536), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3451/3451), done.
+Writing objects: 100% (3536/3536), 276.01 MiB | 1.50 MiB/s, done.
+Total 3536 (delta 173), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (173/173), done.
+To github.com:python3student/PC.git
+ + d310ada...7acb2eb master -> master (forced update)
+branch 'master' set up to track 'PCS/master'.
+
+
+PS D:\WorkSpace\PC> git branch PC2
+PS D:\WorkSpace\PC> git checkout PC2
+
+Switched to branch 'PC2'
+M       None_QQ/qq2/qq2/data/2022-07-09_data.json
+A       None_QQ/qq2/qq2/data/2022-07-10_data.json
+M       None_QQ/qq2/qq2/data/data.json
+A       None_QQ/qq2/qq2/data/fu.py
+M       None_QQ/qq2/qq2/plugins/main.py
+D       None_QQ/qq2/qq2/plugins/test01.py
+M       None_QQ/qq2/qq2/plugins/weather2.py
+A       "None_QQ/qq2/qq2/plugins/\345\220\215\350\250\200.py"
+A       "None_QQ/qq2/qq2/plugins/\346\216\222\350\241\214.py"
+A       "None_QQ/qq2/qq2/plugins/\347\247\257\345\210\206.py"
+M       "None_QQ/qq2/qq2/plugins/\347\255\276\345\210\260.py"

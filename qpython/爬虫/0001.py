@@ -11,7 +11,6 @@ print(res)
 # 读取网页内容
 
 
-with open('mybaidu.html', 'w') as f:
+with open('mybaidu.html', 'w', encoding='utf-8') as f:
     f.write(res)  # 读取网页的页面源代码
 print('over')
-

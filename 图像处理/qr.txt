@@ -1,0 +1,1 @@
+myqr -c -v20 -p 1.gif https://qm.qq.com/cgi-bin/qm/qr?k=lSz5cPew9PtU1z4Sev6olccxpsf5FKNB'&'noverify=0

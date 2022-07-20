@@ -1,0 +1,18 @@
+class _ThemeType:
+    BUILTIN_THEMES = ["light", "dark", "white"]
+    LIGHT = "light"
+    DARK = "dark"
+    WHITE = "white"
+    CHALK: str = "chalk"
+    ESSOS: str = "essos"
+    INFOGRAPHIC: str = "infographic"
+    MACARONS: str = "macarons"
+    PURPLE_PASSION: str = "purple-passion"
+    ROMA: str = "roma"
+    ROMANTIC: str = "romantic"
+    SHINE: str = "shine"
+    VINTAGE: str = "vintage"
+    WALDEN: str = "walden"
+    WESTEROS: str = "westeros"
+    WONDERLAND: str = "wonderland"
+    HALLOWEEN: str = "halloween"

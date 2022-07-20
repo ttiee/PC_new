@@ -1,0 +1,122 @@
+{'font': 0,
+ 'message': '[CQ:face,id=317,type=sticker]',
+ 'message_id': 2107344974,
+ 'message_type': 'private',
+ 'post_type': 'message',
+ 'raw_message':'[CQ:face,id=317,type=sticker]',
+ 'self_id': 469784630,
+ 'sender':
+     {'age': 0,
+     'nickname': 'ﷺٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ',
+     'sex': 'unknown',
+     'user_id': 1662941153},
+ 'sub_type': 'friend',
+ 'target_id': 469784630,
+ 'time': 1651482787,
+ 'user_id': 1662941153}
+
+{'anonymous': None, 'font': 0,
+ 'group_id': 1143107466,
+ 'message': '小伙子报清华是吧',
+ 'message_id': -174896518,
+ 'message_seq': 25803,
+ 'message_type': 'group',
+ 'post_type': 'message',
+ 'raw_message': '小伙子报清华是吧',
+ 'self_id': 469784630,
+ 'sender':
+    {'age': 0,
+     'area': '',
+     'card': '',
+     'level': '',
+     'nickname': '无敌暴龙战神',
+     'role': 'member',
+     'sex': 'unknown',
+     'title': '',
+     'user_id': 474020557},
+ 'sub_type': 'normal',
+ 'time': 1651483164,
+ 'user_id': 474020557}
+
+ {'anonymous': None, 'font': 0,
+  'group_id': 1143107466,
+  'message': '[CQ:image,file=f5b835df952862e3891eb83ea9f1d22d.image,url=https://gchat.qpic.cn/gchatpic_new/1642883508/1143107466-3156792069-F5B835DF952862E3891EB83EA9F1D22D/0?term=3,subType=1]',
+  'message_id': 42342935,
+  'message_seq': 25811,
+  'message_type': 'group',
+  'post_type': 'message',
+  'raw_message': '[CQ:image,file=f5b835df952862e3891eb83ea9f1d22d.image,subType=1]',
+  'self_id': 469784630,
+  'sender':
+      {'age': 0,
+       'area': '',
+      'card': '傻逼喜欢wbl',
+      'level': '',
+      'nickname': 'pToTq',
+      'role': 'admin',
+      'sex': 'unknown',
+      'title': '',
+      'user_id': 1642883508},
+  'sub_type': 'normal',
+  'time': 1651483540,
+  'user_id': 1642883508}
+
+{'notice_type': 'notify',
+ 'post_type': 'notice',
+ 'self_id': 469784630,
+ 'sender_id': 1662941153,
+ 'sub_type': 'poke',
+ 'target_id': 469784630,
+ 'time': 1651559700,
+ 'user_id': 1662941153}
+
+ {'group_id': 735890247,
+  'notice_type': 'notify',
+  'post_type': 'notice',
+  'self_id': 469784630,
+  'sender_id': 1662941153,
+  'sub_type': 'poke',
+  'target_id': 469784630,
+  'time': 1651559987,
+  'user_id': 1662941153}
+
+
+[CQ:xml,data=<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><msg serviceID="2" templateID="1" action="web" brief="" sourceMsgId="0" url="https://txmov2.a.kwimgs.com/upic/2022/04/29/09/BMjAyMjA0MjkwOTQxNTNfMjg0MDYxNjk4OF83MzE1MDMxMzAwMl8yXzM=_b_B69bcee82fc9f8afad546a68830ffe4bf.mp4?tag=1-1651196557-std-1-ini4ct7hof-8b6d9c3db7efa037" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2"><audio cover="http://cdn.u1.huluxia.com/g4/M03/DC/A3/rBAAdmJgvP2ATyR7AADMWEzoizs189.png" src="https://cdn.ooomn.com/bsyy/18.mp3" /><title>整点报时</title><summary>现在是18时00分15秒~</summary></item><source name="滑稽永远的神！" icon="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" url="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" action="app" a_actionData="com.netease.cloudmusic" i_actionData="tencent100495085://" appid="100495085" /></msg>,resid=60]
+
+[CQ:xml,data=<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><msg serviceID="2" templateID="1" action="web" brief="" sourceMsgId="0" url="https://txmov2.a.kwimgs.com/upic/2022/04/29/09/BMjAyMjA0MjkwOTQxNTNfMjg0MDYxNjk4OF83MzE1MDMxMzAwMl8yXzM=_b_B69bcee82fc9f8afad546a68830ffe4bf.mp4?tag=1-1651196557-std-1-ini4ct7hof-8b6d9c3db7efa037" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2"><audio cover="http://cdn.u1.huluxia.com/g4/M03/DC/A3/rBAAdmJgvP2ATyR7AADMWEzoizs189.png" src="http://music.163.com/song/media/outer/url?id=31365604" /><title>你从未离去</title><summary>『作者』滑稽</summary></item><source name="滑稽永远的神！" icon="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" url="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" action="app" a_actionData="com.netease.cloudmusic" i_actionData="tencent100495085://" appid="100495085" /></msg>,resid=60]
+
+[CQ:xml,data=<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><msg serviceID="2" templateID="1" action="web" brief="" sourceMsgId="0" url="https://python3student.github.io/" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2"><audio cover="https://sm.ms/image/c3gkswUBG9MRCzE" src="http://music.163.com/song/media/outer/url?id=31365604" /><title>你从未离去</title><summary>『作者』神奇</summary></item><source name="神奇永远的神！" icon="https://sm.ms/image/c3gkswUBG9MRCzE" url="https://sm.ms/image/c3gkswUBG9MRCzE" action="app" a_actionData="com.netease.cloudmusic" i_actionData="tencent100495085://" appid="100495085" /></msg>,resid=60]
+
+[CQ:xml,data=<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><msg serviceID="2" templateID="1" action="web" brief="" sourceMsgId="0" url="https://txmov2.a.kwimgs.com/upic/2022/04/29/09/BMjAyMjA0MjkwOTQxNTNfMjg0MDYxNjk4OF83MzE1MDMxMzAwMl8yXzM=_b_B69bcee82fc9f8afad546a68830ffe4bf.mp4?tag=1-1651196557-std-1-ini4ct7hof-8b6d9c3db7efa037" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2"><audio cover="http://cdn.u1.huluxia.com/g4/M03/DC/A3/rBAAdmJgvP2ATyR7AADMWEzoizs189.png" src="" /><title>整点报时</title><summary>现在是22时00分19秒~</summary></item><source name="滑稽永远的神！" icon="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" url="http://cdn.u1.huluxia.com/g4/M03/DC/54/rBAAdmJgJPSAK4zJAAALJqJQ_lg351.gif" action="app" a_actionData="com.netease.cloudmusic" i_actionData="tencent100495085://" appid="100495085" /></msg>,resid=60]
+
+{'group_id': 549619929, 'notice_type': 'group_decrease', 'operator_id': 1048702610, 'post_type': 'notice', 'self_id': 469784630, 'sub_type': 'kick', 'time': 1651566890, 'user_id': 204240}
+{'group_id': 549619929, 'message_id': 1538829412, 'notice_type': 'group_recall', 'operator_id': 1048702610, 'post_type': 'notice', 'self_id': 469784630, 'time': 1651558578, 'user_id': 204240}
+{'group_id': 288528531, 'notice_type': 'group_decrease', 'operator_id': 469784630, 'post_type': 'notice', 'self_id': 469784630, 'sub_type': 'leave', 'time': 1651646511, 'user_id': 469784630}
+
+[CQ:forward,id=hXWxptLY/FW3iEIs3+P+blx/jkOYE+Im0F4xedAAbOPPZr31sjx7COdEcH9Mz6yB]
+
+[CQ:json,data={"app":"com.tencent.miniapp_01"&#44;"config":{"autoSize":0&#44;"ctime":1652082785&#44;"forward":1&#44;"height":0&#44;"token":"b4c065b52082a74bea5f8a77e72db43b"&#44;"type":"normal"&#44;"width":0}&#44;"desc":"哔哩哔哩"&#44;"extra":{"app_type":1&#44;"appid":100951776&#44;"uin":1642883508}&#44;"meta":{"detail_1":{"appType":0&#44;"appid":"1109937557"&#44;"desc":"手冲 VS 器冲"&#44;"gamePoints":""&#44;"gamePointsUrl":""&#44;"host":{"nick":"pToTq"&#44;"uin":1642883508}&#44;"icon":"http://miniapp.gtimg.cn/public/appicon/432b76be3a548fc128acaa6c1ec90131_200.jpg"&#44;"preview":"pubminishare-30161.picsz.qpic.cn/c332dbdc-0b82-4243-86fe-1c7fb046dee7"&#44;"qqdocurl":"https://b23.tv/pgPs0pE?share_medium=android&amp;share_source=qq&amp;bbid=XY07A1F0D5AD2FF00771E997C25A66B45CB86&amp;ts=1652082777305"&#44;"scene":1036&#44;"shareTemplateData":{}&#44;"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4"&#44;"showLittleTail":""&#44;"title":"哔哩哔哩"&#44;"url":"m.q.qq.com/a/s/ea0700e588015fc8b87633156c4ba9fb"}}&#44;"needShareCallBack":false&#44;"prompt":"&#91;QQ小程序&#93;哔哩哔哩"&#44;"ver":"1.0.0.19"&#44;"view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}]
+https://b23.tv/pgPs0pE?share_medium=android&amp;share_source=qq&amp;bbid=XY07A1F0D5AD2FF00771E997C25A66B45CB86&amp;ts=1652082777305
+https://www.bilibili.com/video/BV1R5411U71Q?p=1&share_medium=android&share_plat=android&share_session_id=cd05bba6-b57c-450a-9f00-5ffb2cdb7aa6&share_source=QQ&share_tag=s_i&timestamp=1652082777&unique_k=pgPs0pE#44;%22scene%22:1036&#44;%22shareTemplateData
+https://www.bilibili.com/video/BV1R5411U71Q?spm_id_from=333.999.0.0
+
+
+卡片代码分享
+{"app":"com.tencent.mobileqq.reading","desc":"","view":"singleImg","ver":"1.0.0.70","prompt":"百元大钞","appID":"","sourceName":"","actionData":"","actionData_A":"","sourceUrl":"","meta":{"singleImg":{"mainImage":"https:\/\/gchat.qpic.cn\/gchatpic_new\/3020005669\/916530575-2949639428-6E45D21EADE33511C565E25AB432AB59\/0?term=2","mainUrl":""}},"text":"","extraApps":[],"sourceAd":""}
+
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+actionData="AppCmd://OpenContactInfo/?uin=85443298"
+a_actionData="mqqapi://card/show_pslcard?src_type=internal&source=sharecard&version=1&uin=85443298"
+i_actionData="mqqapi://card/show_pslcard?src_type=internal&source=sharecard&version=1&uin=85443298"
+brief="[QQ红包]恭喜发财" flag="2" url="">
+[CQ:xml,data=<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><msg serviceID="95" templateID="1" action="plugin" actionData="AppCmd://OpenContactInfo/?uin＝" a_actionData="mqqapi://card/show_pslcard?src_type=internal&amp;amp;source=sharecard&amp;amp;version=1&amp;amp;uin=2584397341" i_actionData="mqqapi://card/show_pslcard?src_type=internal&amp;amp;source=sharecard&amp;amp;version=1&amp;amp;uin=318016669" brief="腾讯官方认证脑婆账号" sourceMsgId="0" url="" flag="2" adverSign="0" multiMsgFlag="0"><item layout="0" mode="1"><summary> 脑婆认证</summary><hr hidden="false" style="0" /></item><item layout="2" mode="1"><picture cover="mqqapi://card/show_pslcard?src_type=internal&amp;amp;source=sharecard&amp;amp;version=1&amp;amp;uin=318016669" w="0" h="0" /><title color="#FFD250">⁣职业脑婆</title><summary color="#FF4384">腾讯官方认证脑婆</summary></item><source name="官方认证" icon="http://ctc.qzs.qq.com/ac/qzone_v5/client/auth_icon.png" action="" appid="-1" /></msg>,resid=95]
+
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><msg serviceID="1" templateID="1" action="plugin" actionData="AppCmd://OpenContactInfo/?uin＝" a_actionData="mqqapi://card/show_pslcard?src_type=internal&amp;source=sharecard&amp;version=1&amp;uin=2731162774" i_actionData="mqqapi://card/show_pslcard?src_type=internal&amp;source=sharecard&amp;version=1&amp;uin=2731162774" brief="腾讯官方认证账号" sourceMsgId="0" url="" flag="2" adverSign="0" multiMsgFlag="0"><item layout="0" mode="1" advertiser_id="0" aid="0"><summary> 王者荣耀职业认证</summary><hr hidden="false" style="0" /></item><item layout="2" mode="1" advertiser_id="0" aid="0"><picture cover="mqqapi://card/show_pslcard?src_type=internal&amp;source=sharecard&amp;version=1&amp;uin=2731162774" w="0" h="0" /><title color="#FFD250">⁣KPL职业选手</title><summary color="#FF4384">腾讯官方认证选手</summary></item><source name="官方认证" icon="http://ctc.qzs.qq.com/ac/qzone_v5/client/auth_icon.png" action="web" appid="-1" /></msg>
+
+卖瓜
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><msg serviceID="1" templateID="-1" action="web" brief="前排卖瓜" sourceMsgId="0" url="" flag="3" adverSign="0" multiMsgFlag="0"><item layout="1" bg="-16720521" advertiser_id="0" aid="0"><button size="80">表情</button><button /><button></button><button /><tr /></item><item layout="1" advertiser_id="0" aid="0"><summary color="#000000" style="5">原价:19.9斤</summary></item><item layout="0" advertiser_id="0" aid="0"><summary size="50" color="#ff0000">现价:9.9斤</summary><hr hidden="false" style="0" /></item><source name="" icon="" action="" appid="-1" /></msg>
+
+[CQ:xml,data=<?xml version='1.0' encoding='UTF-8' ?><msg serviceID="104" templateID="1" brief="大家好，我是嘿嘿嘿。来自密歇根安娜堡的狮子座男一枚~"><item layout="2"><picture cover="" /><title>新人入群</title></item><source /></msg>,resid=104]
+
+{'file': {'busid': 102, 'id': '/04e8a282-d444-11ec-84f8-5452007b5d9f', 'name': 'FA-重制版_1.5.5.zip', 'size': 10178236, 'url': 'http://180.110.193.188/ftn_handler/1748b9cb3a76ea30559a4746abf523e17225e82220c4735cc10b15bd24a3d73acba3099d7c060e2abe354ed85c6111a7f43c192b2544e8d17c4b6499faed32bc/?fname=2f30346538613238322d643434342d313165632d383466382d353435323030376235643966'}, 'group_id': 549619929, 'notice_type': 'group_upload', 'post_type': 'notice', 'self_id': 469784630, 'time': 1652614932, 'user_id': 2534809901}
+

@@ -1,0 +1,133 @@
+﻿<head>
+<title>清明上河图</title>
+<style type="text/css">
+*{padding:0;margin:0;border:none;font-size:12px;}
+body{background:url(images/bg.jpg);cursor:url(images/Pen.CUR),auto}
+#view{position:relative;top:0px;width:100%;overflow:hidden;height:630px} 
+#drag{width:20160px;position:absolute;left:0px;top:0px;}
+#maps li,#maps img{width:210px;height:210px;display:block;vertical-align:bottom;font-size:0;background:black;}
+#maps img{filter:alpha(opacity=0);opacity:0}
+#maps li{float:left;font-size:30px;color:black;text-align:center;vertical-align:200px}
+</style>
+
+<script type="text/javascript" src="js/D.js"></script>
+<script type="text/javascript" src="js/Tw.js"></script>
+<script type="text/javascript">
+function drag(){
+	var T=tool,html="",i=null;
+	var maps=T.$("#maps");
+	var drag=T.$("#drag");
+	var W=T.broswerXY("clientWidth");
+	var H=T.broswerXY("clientHeight");
+	var back=-(20186-W);
+	for(i=1;i<291;i++){
+		html += "<li><img src='images/load.gif' loadsrc='images/qmsht_" + i + ".jpg' /></li>";
+		
+	}
+	function fd(element, start, end, speed, callback){
+			clearInterval(element.fd);
+			var speed = speed || 2;
+			element.fd = setInterval(function() {
+				start = start < end ? Math.min(start + speed, end) : Math.max(start - speed, end);
+				element.style.opacity = start / 100;
+				element.style.filter = "alpha(opacity=" + start + ")";
+				if (start == end) {
+					clearInterval(element.fd);
+					if (callback) {callback.call(element)}
+				}
+			},
+			15)
+}
+	maps.innerHTML=html;
+	imgs=T.$("#maps","img");
+	var lis=T.$("#maps","li");
+	function show(){
+		for(var x=0;x<i-1;x++){
+			if(T.rect(lis[x]).left<W+T.scrollXY("scrollLeft") && imgs[x].ed==null){
+				imgs[x].src=imgs[x].getAttribute("loadsrc");
+				imgs[x].ed=1
+				fd(imgs[x],0,100)
+			}
+		} 
+	};
+	show();
+	
+	function dis(e,mv,sw){
+		clearInterval(drag.move)
+		drag.t=0;
+		drag.d=30;
+		drag.b=parseInt(drag.style.left) || 0;
+		//drag.c=e-drag.b;
+		drag.c=(sw ? e:e-drag.b)
+		drag.move=setInterval(function(){
+						if(drag.t++<drag.d){drag.style.left=mv(drag.t,drag.b,drag.c,drag.d)+"px"}else{
+							clearInterval(drag.move);
+							if(sw){show()}
+						}
+		},20)
+	}
+	drag.onmousedown=function(e){
+		T.cancelClick(e);
+		clearInterval(drag.move);
+		this.here1=parseInt(drag.style.left)||0;
+		this.here2=parseInt(drag.style.top)||0;
+		this.x=T.mouse.x(e)
+		drag.onmousemove=function(e){
+				T.cancelClick(e);
+				drag.style.left=this.here1+T.mouse.x(e)-this.x+"px";			
+		}
+		
+		drag.onmouseup=function(e){
+			clearInterval(drag.move);
+		 
+			this.onmousemove=null;
+			if(parseInt(drag.style.left)>0 ) {
+					dis(0,Tween.Back.easeOut);
+				
+			}//if
+			if(parseInt(drag.style.left)<back ) {
+					dis(-(20160-T.broswerXY("clientWidth")),Tween.Back.easeOut)
+			
+			}//if
+			if(T.mouse.x(e)-this.x<0 && parseInt(drag.style.left)>back) {
+						dis(-T.mouse.x(e),Tween.Quad.easeOut,1)
+						
+			}
+			if(T.mouse.x(e)-this.x>0 && parseInt(drag.style.left)<0) {
+						 dis(T.mouse.x(e),Tween.Quad.easeOut,1)
+			}
+	
+		}//up
+		
+	}
+}
+</script>
+
+</head>
+<body>
+
+<style type="text/css">
+.tp,.bp{height:20px;width:100%;position:absolute;}
+.tp{background:url(images/edge_top_black.gif) repeat-x;z-index:111;left:0;top:0}
+.bp{background:url(images/edge_bottom_black.gif) repeat-x;left:0;bottom:0;}
+.lt{height:100%;position:absolute;left:0;top:0;background:url(images/edge_left_black.gif);width:20px;z-index:111}
+.rt{height:100%;position:absolute;right:0;top:0;background:url(images/edge_right_black.gif);width:20px;z-index:111}
+#maps{float:left;}
+</style>
+
+<div id="view" style="cursor:url(images/Pen.CUR)),auto">
+	<div class="tp"></div>
+	<div class="lt"></div>
+	<div id="drag" style="position:absolute;left:0;">
+		<ul id="maps"></ul>
+	</div>
+	<div class="rt"></div>
+	<div class="bp"></div>
+</div>
+
+<script type="text/javascript">
+drag()
+</script>
+
+</body>
+</html>
