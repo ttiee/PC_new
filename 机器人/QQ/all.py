@@ -159,8 +159,12 @@ mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z.mp3]'
 #           'msg': mus1.format(28613172)})
 
 # v1 = '[CQ:video,file=http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4]'
-# send_msg({'msg_type': 'group', 'number': 566077032,
-#           'msg': v1})
+# send_msg({'msg_type': 'group', 'number': 1055277728,
+#           'msg': mus4})
+mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/拜拜咯，我去洗澡了。.mp3]'
+mus6 = '[CQ:record,file=A9D6E4E616DE774E9F780C5A31182B1F.amr]'
+send_msg({'msg_type': 'group', 'number': 748820990,
+          'msg': mus5})
 
 # zidong
 # zidong = '[CQ:json,data={"app":"com.tencent.gamecenter.gameshare"&#44;"desc":""&#44;"view":"noDataView"&#44;"ver":"0.0.0.0"&#44;"prompt":""&#44;"appID":""&#44;"sourceName":""&#44;"actionData":""&#44;"actionData_A":""&#44;"sourceUrl":""&#44;"meta":{"shareData":{"scene":"SCENE_SHARE_VIDEO"&#44;"jumpUrl":"https:\/\/m7.music.126.net\/20200718135354\/bbfc5f8a0639d1c2113489032f9067a9\/ymusic\/4fa5\/a2b6\/8659\/ee74ab310f636428356429c37b10767b.mp3"&#44;"type":"video"&#44;"url":"https:\/\/game.gtimg.cn\/images\/yxzj\/cp\/a20170915diaucharn\/bg.mp3"}}&#44;"config":{"forward":1}&#44;"text":""&#44;"extraApps":&#91;&#93;&#44;"sourceAd":""&#44;"extra":""}]'
@@ -169,6 +173,6 @@ mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z.mp3]'
 # cardimage1 = r'[CQ:cardimage,file=file:/D:\WorkSpace\PC\aaa_qrcode.png]'
 # send_msg({'msg_type': 'group', 'number': 566077032,
 #           'msg': cardimage1})
-send_msg({'msg_type': 'group', 'number': 748820990,
-          'msg': mus1.format(36990266)})
+# send_msg({'msg_type': 'group', 'number': 748820990,
+#           'msg': mus1.format(36990266)})
 

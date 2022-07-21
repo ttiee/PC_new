@@ -9,7 +9,7 @@ from nonebot.matcher import Matcher
 from nonebot.params import Arg, CommandArg, ArgPlainText
 from nonebot.rule import to_me
 
-novel = on_keyword({'下载', '小说', '文件'}, priority=10)
+novel = on_keyword({'批量下载', '批量文件'}, priority=10)
 
 
 @novel.handle()
@@ -23,13 +23,13 @@ async def a(bot: Bot, event: Event):
     # 获取小说名，文件夹名
     user_command = str(event.get_message())
     if '|' not in user_command:
-        await novel.finish('请按：文件|起始页|结束页|文件夹名 的方式写')
+        await novel.finish('请按：批量文件|起始页|结束页|文件夹名 的方式写')
     try:
         start = int(user_command.split('|')[1])
         end = int(user_command.split('|')[2])
         folder_name = user_command.split('|')[3]
     except IndexError:
-        await novel.finish('请按：文件|起始页|结束页|文件夹名 的方式写')
+        await novel.finish('请按：批量文件|起始页|结束页|文件夹名 的方式写')
         return None
     except ValueError:
         await novel.finish('起始页和结束页必须是数字！')
@@ -71,7 +71,7 @@ async def get_novel(bot: Bot, start: int, end: int, folder_id, group_id) -> None
         await novel.send("小说：" + title + "下载完成，正在上传")
 
         novel_path = filename
-        novel_name = title
+        novel_name = title+'.txt'
 
         await bot.call_api('upload_group_file', **{'group_id': group_id,
                                                    'file': novel_path,
