@@ -161,7 +161,7 @@ mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z.mp3]'
 # v1 = '[CQ:video,file=http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4]'
 # send_msg({'msg_type': 'group', 'number': 1055277728,
 #           'msg': mus4})
-mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/拜拜咯，我去洗澡了。.mp3]'
+mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/a.mp3]'
 mus6 = '[CQ:record,file=A9D6E4E616DE774E9F780C5A31182B1F.amr]'
 send_msg({'msg_type': 'group', 'number': 748820990,
           'msg': mus5})

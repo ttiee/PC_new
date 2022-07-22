@@ -1,9 +1,11 @@
 from nonebot import on_keyword
 from nonebot.typing import T_State
+from nonebot.rule import to_me
+
 from nonebot.adapters.onebot.v11 import GroupMessageEvent, Bot, Message, MessageSegment, Event
 from random import choice, randint
 
-fy = on_keyword({'音乐', '语音'})
+fy = on_keyword({'音乐', '语音'}, rule=to_me())
 
 
 @fy.handle()
