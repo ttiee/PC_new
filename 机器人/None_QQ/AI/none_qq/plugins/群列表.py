@@ -1,7 +1,7 @@
 from nonebot import on_command
 from nonebot.adapters.onebot.v11 import Bot, Event, GroupMessageEvent, Message
 
-A = on_command('1', priority=5)
+A = on_command('群列表', priority=5)
 
 
 @A.handle()

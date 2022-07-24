@@ -9,7 +9,7 @@ from nonebot.matcher import Matcher
 from nonebot.params import Arg, CommandArg, ArgPlainText
 from nonebot.rule import to_me
 
-novel = on_keyword({'批量下载', '批量文件'}, priority=10)
+novel = on_keyword({'批量下载', '批量文件'}, rule=to_me(), priority=10)
 
 
 @novel.handle()
@@ -59,27 +59,30 @@ async def a(bot: Bot, event: Event):
 async def get_novel(bot: Bot, start: int, end: int, folder_id, group_id) -> None:
     _txt = get_more_href_title(page_start=start, page_end=end)
     for title, url in _txt.items():
-        title = title.split(':')[0]
-        filename = r"D:/WorkSpace/PC/机器人/None_QQ/AI/none_qq/novel/" + title + ".txt"
+        title = title.split(':')[0]+'.txt'
+        filename = r"D:/WorkSpace/PC/机器人/None_QQ/AI/none_qq/novel/" + title
         f = requests.get(url)
 
-        await novel.send("开始下载小说：" + title)
+        # await novel.send("开始下载小说：" + title)
 
-        with open(filename, "wb") as txt:
-            txt.write(f.content)
+        if len(f.content) >= 10000:
+            with open(filename, "wb") as txt:
+                txt.write(f.content)
 
-        await novel.send("小说：" + title + "下载完成，正在上传")
+            await novel.send("小说：" + title + "下载完成，正在上传")
 
-        novel_path = filename
-        novel_name = title+'.txt'
+            novel_path = filename
+            novel_name = title
 
-        await bot.call_api('upload_group_file', **{'group_id': group_id,
-                                                   'file': novel_path,
-                                                   'name': novel_name,
-                                                   'folder': folder_id
-                                                   })
+            await bot.call_api('upload_group_file', **{'group_id': group_id,
+                                                       'file': novel_path,
+                                                       'name': novel_name,
+                                                       'folder': folder_id
+                                                       })
 
-        os.remove(filename)
+            os.remove(filename)
+        else:
+            await novel.send("小说：" + title + "无价值")
 
     await novel.send("所有小说下载完成")
 

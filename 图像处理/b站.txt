@@ -3,3 +3,8 @@ you-get https://www.bilibili.com/video/BV1dV4y1E75s?spm_id_from=333.337.search-c
 ffmpeg -i 最伟大的作品.mp4 -c:v libx264 最伟大的作品pv.mp4
 
 ffmpeg -i 最伟大的作品pv.mp4 -f mp3 -ar 16000 最伟大的作品.mp3
+
+
+ffmpeg -i res/test.mp4 -vf scale=w=200:h=100 out/out.mp4
+
+ffmpeg -i 2.mp4 -vf crop=w=1080:h=1080:x=420:y=0 out2.mp4
