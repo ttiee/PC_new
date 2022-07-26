@@ -19,9 +19,9 @@ class M2(Scene):
     def construct(self):
         t1 = Text('大家好，我是神奇', font='SimHei').scale(1.5)
         t2 = Text('今天为大家演示几个函数', font='SimHei')
-        t3 = Text('by 神奇', font='SimHei', color=BLUE_D).scale(0.4).shift([-5.3, 3.5, 0])
-        square1 = Square().scale(0.2).shift([-6, 3.5, 0])
-        img = FadeIn(ImageMobject(r"C:\Users\ujbhi\Desktop\视频\1.jpg").scale(0.1).shift([-6, 3.5, 0]))
+        t3 = Text('by 神奇', font='SimHei', color=BLUE_D).scale(0.4).shift([-5.4, 3.5, 0])
+        square1 = Square().scale(0.2).shift([-6.15, 3.5, 0])
+        img = FadeIn(ImageMobject(r"C:\Users\ujbhi\Desktop\视频\1.jpg").scale(0.1).shift([-6.15, 3.5, 0]))
 
         t1.fix_in_frame()
         # t1.to_edge(UP)
@@ -72,7 +72,7 @@ class M2(Scene):
         # relu_label = axes.get_graph_label(relu_graph, Text("ReLU"))
         # step_label = axes.get_graph_label(step_graph, Text("Step"), x=4)
 
-        t4 = Text('y=sin(x)').shift(UP + UP)
+        t4 = Tex(r'y = 2sin(x)').shift(UP + UP)
 
         self.play(
             ShowCreation(sin_graph),
@@ -82,22 +82,31 @@ class M2(Scene):
         self.wait(2)
         self.play(FadeOut(t4))
 
-        t5 = Text('分段函数', font='SimHei').shift(UP + UP)
+        # t5 = Text('分段函数', font='SimHei').shift(UP + UP)
+        t5 = VGroup(Tex(r'x , x \textgreater 0'), Tex(r'0 ,  x \leq 0')).arrange(DOWN).shift(UP*3)
+        y = Tex('y = ')
+        y.next_to(t5, LEFT*2).shift(DOWN*0.05)
+        brace = Brace(t5, LEFT)
         self.play(
             ReplacementTransform(sin_graph, relu_graph),
             # FadeTransform(sin_label, relu_label),
         )
-        self.play(ShowIncreasingSubsets(t5))
-        self.wait()
+        self.add(t5, brace, y)
+        # self.play(ShowIncreasingSubsets(t5))
+        self.wait(2)
+        self.play(FadeOut(t5), FadeOut(y), FadeOut(brace))
+
+        t6 = VGroup(Tex(r'2 , x \textgreater 3'), Tex(r'1 ,  x \leq 3')).arrange(DOWN).shift(UP*3)
 
         self.play(
             ReplacementTransform(relu_graph, step_graph),
             # FadeTransform(relu_label, step_label),
         )
-        self.wait()
-        self.play(FadeOut(t5))
+        self.add(t6, brace, y)
+        self.wait(2)
+        self.play(FadeOut(t6), FadeOut(y), FadeOut(brace))
 
-        t6 = Text('抛物线', font='SimHei').shift(RIGHT * 3)
+        t6 = Tex('y', '=', r'\frac{1}{4}x^2', font='SimHei').shift(RIGHT * 3)
         parabola = axes.get_graph(lambda x: 0.25 * x ** 2)
         parabola.set_stroke(GREEN_A)
         self.play(
@@ -131,5 +140,32 @@ class M2(Scene):
 
 class t(Scene):
     def construct(self) -> None:
-        t1 = Tex('$x^2$')
+        t1 = Tex('x^2')
         self.play(FadeIn(t1))
+        self.wait()
+        self.play(FadeOut(t1))
+        # t2 = Tex(r'\left\{\begin{eqnarray}x_1+x_2+xx_3=-\frac{b}{a}\\x_1x_2+xx_2x_3+x_3x_1=\frac{c}{a}\\x_1x_2xx_3=-\frac{d}{a}\end{eqnarray}\right').shift(UP)
+        # t2 = Tex(r'\Latex')
+        t2 = Tex(r'\begin{aligned}A^2&=B^2+C^2\\A&=\sqrt{B^2+C^2}\end{aligned}')
+        t3 = SingleStringTex(r'\begin{pmatrix}1&1\\1&1\end{pmatrix}')
+        self.play(FadeIn(t2))
+        self.wait()
+        self.play(FadeOut(t2))
+        self.play(FadeIn(t3))
+        self.wait()
+        self.play(FadeOut(t3))
+        t4 = Tex(r'\sum_{i=1}^\infty\frac{1}{i^2}=\frac{\pi^2}{6}\\')
+        self.play(FadeIn(t4))
+        self.wait()
+        self.play(FadeOut(t4))
+        t5 = Tex(r' f(x)=\left\{\begin{aligned}x & =  \cos(t) \\y & =  \sin(t) \\z & =  \frac xy\end{aligned}\right.')
+        self.play(FadeIn(t5))
+        self.wait()
+        # self.play(FadeOut(t5))
+
+
+if __name__ == "__main__":
+    # from os import system
+    #
+    # system("manimgl {} M2".format(__file__))
+    ...
