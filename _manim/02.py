@@ -140,6 +140,7 @@ class M2(Scene):
 
 class t(Scene):
     def construct(self) -> None:
+        self.add_sound(r"D:\WorkSpace\PC\_manim\sound\Enler's Clock.mp3")
         t1 = Tex('x^2')
         self.play(FadeIn(t1))
         self.wait()
@@ -164,8 +165,4 @@ class t(Scene):
         # self.play(FadeOut(t5))
 
 
-if __name__ == "__main__":
-    # from os import system
-    #
-    # system("manimgl {} M2".format(__file__))
-    ...
+
