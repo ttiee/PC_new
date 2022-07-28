@@ -1,0 +1,1 @@
+{'length': 200, 'width': 200, 'mode': 0}
