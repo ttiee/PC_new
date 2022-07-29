@@ -1,0 +1,4 @@
+v2.1
+    (1) Fixed some bugs.
+    (2) Rewritten How to play it.txt.
+    (3) The names of saved worlds are now no longer random characters, but the system time when they were saved.

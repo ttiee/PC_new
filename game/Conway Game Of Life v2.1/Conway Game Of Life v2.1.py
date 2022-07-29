@@ -1,16 +1,18 @@
 import pygame
 from copy import deepcopy
-from random import randint
+from datetime import datetime
+from re import sub
+
 
 pygame.init()
 
-with open('__init__.txt', 'r') as init:
+with open('__init__.txt', 'r', encoding='utf+8') as init:
     _init = eval(init.read())
     length = _init['length']
     width = _init['width']
-    mode = _init['mode']
+    EnableBoundary = _init['EnableBoundary']
     del _init
-if (not mode) and length != width:
+if (not EnableBoundary) and length != width:
     raise ValueError('when the boundary is not enabled, the length and width must be the same')
 window = pygame.display.set_mode((length * 5, width * 5))
 draw = False
@@ -24,8 +26,8 @@ for i in range(length):
 del _
 liveNow = deepcopy(empty)
 
-with open('__path__.txt', 'r', encoding='utf-8') as path:
-    with open(path.read(), 'r') as cellList:
+with open('__path__.txt', 'r', encoding='utf+8') as path:
+    with open(path.read(), 'r', encoding='utf+8') as cellList:
         cells = eval(cellList.read())
         for cell in cells:
             liveNow[cell[0]][cell[1]] = 1
@@ -44,30 +46,27 @@ class MyEvent:
 while True:
     events = pygame.event.get()
     if not events:
-        MyEvent = MyEvent
         events.append(MyEvent)
 
     for event in events:
-        if event.type == pygame.QUIT:
+        if event.type in [pygame.QUIT, pygame.K_q]:
             Quit = True
             break
 
-        if event.type == pygame.MOUSEBUTTONDOWN:
+        elif event.type == pygame.MOUSEBUTTONDOWN:
             draw = True and not drawLock
 
-        if event.type == pygame.MOUSEBUTTONUP:
+        elif event.type == pygame.MOUSEBUTTONUP:
             draw = False and not drawLock
             oldColorPoint = (-1, -1)
 
-        if event.type == pygame.KEYDOWN:
+        elif event.type == pygame.KEYDOWN:
             if event.key in [pygame.K_CLEAR, pygame.K_c] and not drawLock:
                 liveNow = deepcopy(empty)
                 window.fill((0, 0, 0))
             elif event.key == pygame.K_s:
-                title = '.txt'
-                for i in range(8):
-                    title = chr([randint(48, 57), randint(65, 90), randint(97, 122)][randint(0, 2)]) + title
-                with open(title, 'w') as cells:
+                with open(sub(':', '：', str(datetime.now()))[:-7] + '.txt',
+                          'w', encoding='utf+8') as cells:
                     cellList = []
                     for x in range(length):
                         for y in range(width):
@@ -78,7 +77,7 @@ while True:
                 drawLock = not drawLock
 
         if not drawLock:
-            pygame.display.set_caption('Conway life game')
+            pygame.display.set_caption('Conway Game Of Life')
             r = 0
         else:
             for x in range(length):
@@ -88,7 +87,7 @@ while True:
                         for j in range(-1, 2):
                             if not i == j == 0:
                                 _x, _y = (x + i), (y + j)
-                                if (-1 < _x < length and -1 < _y < width) or (not mode):
+                                if (-1 < _x < length and -1 < _y < width) or (not EnableBoundary):
                                     a = liveNow[_x % length][_y % width]
                                     add += a
 
@@ -103,7 +102,7 @@ while True:
             liveNow = deepcopy(liveNext)
             OrdinalSuffix = 'th' if r % 100 // 10 == 1 or r % 10 > 3 or r % 10 == 0 else (
                 'st' if r % 10 == 1 else ('nd' if r % 10 == 2 else 'rd'))
-            pygame.display.set_caption(f'Conway life game -- the {str(r) + OrdinalSuffix} generation of life')
+            pygame.display.set_caption(f'Conway Game Of Life -- the {str(r) + OrdinalSuffix} generation of life')
 
         ColorPoint = (pygame.mouse.get_pos()[0] // 5, pygame.mouse.get_pos()[1] // 5)
         PointColor = window.get_at(pygame.mouse.get_pos())

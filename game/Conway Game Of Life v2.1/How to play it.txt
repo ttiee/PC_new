@@ -1,0 +1,25 @@
+Welcome to "Conway Game of Life"!
+
+The game of life has no competition between game players, and there is no winning or losing. It can be classified as a simulation game.
+In fact, it is also named "Game of Life" because the images it simulates and displays look a lot like the birth and reproduction of life.
+As the game progresses, the disordered cells gradually evolve into various delicate, tangible structures; these structures tend to have great symmetry and change shape with each generation.
+Some shapes, once locked, do not change from generation to generation.
+Sometimes, some already formed structures are destroyed by the "invasion" of some disordered cells.
+But shape and order can often emerge from clutter.
+
+A life cell can be placed in each square, and each life cell has only two states:"Dead or Alive".
+A black square indicates that the cell is "live", and a blank (white) indicates that the cell is "dead". In other words, the black part of the grid represents the distribution map of a certain "life" at a certain time.
+
+What Game of Life wants to simulate is how this distribution map will change from generation to generation over time.
+
+In "Conway's Game of Life", the following laws of survival are prescribed.
+(1) When the current cell is in a dead state, when there are 3 surviving cells around it, the cell becomes a surviving state after iteration (simulated reproduction); if it was originally alive, it remains unchanged.
+(2) When the current cell is in the survival state, when the surrounding neighbor cells are less than two (not including two) survival, the cell becomes a dead state (simulating the scarcity of life).
+(3) When the current cell is in a viable state, when there are two or three viable cells around, the cell remains as it is.
+(4) When the current cell is in a viable state, when there are more than 3 viable cells around, the cell becomes a dead state (simulating too many lives).
+
+Press C or Clear to kill all cells.
+Press the S key to save the world as it is currently.
+Press other keys to start (or stop) the passage of time in the world.
+Modify the file path pointed to by __path__.txt to read how a world looks when saved.
+Modify the values in __init__.txt to modify the properties of the world when you create it.
