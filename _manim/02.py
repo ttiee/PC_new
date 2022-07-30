@@ -10,6 +10,13 @@
 """
 """
 manimgl 02.py M2
+
+SimHei
+
+Microsoft JhengHei UI
+Adobe Heiti Std
+Noto Sans CJK SC
+
 """
 
 from manimlib import *

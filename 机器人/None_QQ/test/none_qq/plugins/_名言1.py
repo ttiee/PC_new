@@ -11,7 +11,7 @@
 from nonebot import on_message
 from nonebot.rule import to_me
 from nonebot.adapters.onebot.v11 import Event
-t1 = on_message(rule=to_me(), priority=20)
+t1 = on_message(rule=to_me(), priority=200)
 @t1.handle()
 async def main(event: Event):
     msg = event.get_message()
