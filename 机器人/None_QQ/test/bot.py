@@ -31,6 +31,7 @@ nonebot.load_from_toml("pyproject.toml")
 # import nonebot_plugin_biliav
 # nonebot.load_plugin('haruka_bot')
 # nonebot.load_plugin('nonebot_plugin_picsearcher')  # 搜图
+# nonebot.load_plugin('nonebot_plugin_remake')
 
 
 if __name__ == "__main__":

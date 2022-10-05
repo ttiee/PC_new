@@ -6,7 +6,7 @@
 作者：神奇
 
 功能:
-运行条件:安装manimgl
+运行条件:安装requests
 """
 from typing import Tuple
 

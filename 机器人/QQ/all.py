@@ -153,7 +153,7 @@ music_lis = '[CQ:record,file=http://music.163.com/song/media/outer/url?id={}.mp3
 mus1 = '[CQ:record,file=http://music.163.com/song/media/outer/url?id={}.mp3]'
 mus2 = '[CQ:record,file=https://res.wx.qq.com/voice/getvoice?mediaid=MzIxOTM0NjA3N18xMDAwMDQ2NDE=.mp3]'
 mus3 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/Seve.mp3]'
-mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z.mp3]'
+mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z最伟大的作品.mp3]'
 
 # send_msg({'msg_type': 'group', 'number': 643272204,
 #           'msg': mus1.format(28613172)})
@@ -161,13 +161,13 @@ mus4 = r'[CQ:record,file=file:/D:/WorkSpace/PC/_pygame/z.mp3]'
 # v1 = '[CQ:video,file=http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4]'
 # send_msg({'msg_type': 'group', 'number': 1055277728,
 #           'msg': mus4})
-mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/晚安。我睡了【QQ 29835663更多语音】.mp3]'
-mus6 = '[CQ:record,file=A9D6E4E616DE774E9F780C5A31182B1F.amr]'
-send_msg({'msg_type': 'group', 'number': 1034267197,
-          'msg': mus5})
+mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/你好帅啊.mp3]'
+mus6 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/Shadow Of The Sun.mp3]'
+send_msg({'msg_type': 'group', 'number': 1143107466,
+          'msg': mus6})
 
-# send_msg({'msg_type': 'private', 'number': 1692851288,
-#           'msg': mus5})
+# send_msg({'msg_type': 'private', 'number': 3051730184,
+#           'msg': mus6})
 # zidong
 # zidong = '[CQ:json,data={"app":"com.tencent.gamecenter.gameshare"&#44;"desc":""&#44;"view":"noDataView"&#44;"ver":"0.0.0.0"&#44;"prompt":""&#44;"appID":""&#44;"sourceName":""&#44;"actionData":""&#44;"actionData_A":""&#44;"sourceUrl":""&#44;"meta":{"shareData":{"scene":"SCENE_SHARE_VIDEO"&#44;"jumpUrl":"https:\/\/m7.music.126.net\/20200718135354\/bbfc5f8a0639d1c2113489032f9067a9\/ymusic\/4fa5\/a2b6\/8659\/ee74ab310f636428356429c37b10767b.mp3"&#44;"type":"video"&#44;"url":"https:\/\/game.gtimg.cn\/images\/yxzj\/cp\/a20170915diaucharn\/bg.mp3"}}&#44;"config":{"forward":1}&#44;"text":""&#44;"extraApps":&#91;&#93;&#44;"sourceAd":""&#44;"extra":""}]'
 # send_msg({'msg_type': 'group', 'number': 566077032,
