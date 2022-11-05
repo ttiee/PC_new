@@ -1,4 +1,4 @@
-from manim.manimlib.imports import *
+from manim-master.manimlib.imports import *
 # import scipy
 
 
@@ -721,7 +721,7 @@ class ExplainCircleAnimations(FourierCirclesScene):
                 ShowCreationThenFadeAround, freq_numbers,
             )
         )
-        self.wait(2)
+        self.wait(2)5
 
         self.freq_numbers = freq_numbers
         self.freq_word = freq_word

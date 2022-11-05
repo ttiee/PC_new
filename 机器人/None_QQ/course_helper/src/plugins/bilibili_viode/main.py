@@ -13,7 +13,7 @@ share_sort_url = on_message(block=False)
 
 @share_sort_url.handle()
 async def _(event: Union[MessageEvent, GuildMessageEvent]):
-    video_id_url = await bilibili_video_id_from_url(event.raw_message)
+    video_id_url = await video_id_from_url(event.raw_message)
     video_id = await bilibili_video_id_validate(event.raw_message)
     if (video_id_url or video_id) is None:
         return

@@ -22,7 +22,7 @@ music = on_keyword({'music', '音乐', '点歌', '听歌'}, priority=100, rule=t
 
 @music.handle()
 async def sj(bot: Bot, event: Event):
-    msg = "/点歌/qq点歌/网易点歌/酷我点歌/酷狗点歌/咪咕点歌/b站点歌 + 关键词\n示例：/点歌 最伟大的作品"
+    msg = "/点歌/qq点歌/网易点歌/酷我点歌/酷狗点歌/咪咕点歌/b站点歌 + 关键词\n\n示例：\n/点歌 最伟大的作品\n/点歌 克罗地亚狂想曲\n/网易点歌 I Really Want to Stay at Your House"
 
     await music.send(message=msg)
 

@@ -7,6 +7,14 @@ from .model import *
 
 
 # 正则匹配哔哩哔哩视频链接, 返回视频ID
+async def video_id_from_url(uri: str) -> str:
+    avcode = re.search('av(\d{1,12})|BV(1[A-Za-z0-9]{2}4.1.7[A-Za-z0-9]{2})', uri)
+    if avcode is None:
+        return None
+    return avcode[0]
+
+
+# 正则匹配哔哩哔哩视频链接, 返回视频ID
 async def bilibili_video_id_from_url(uri: str) -> str:
     pattern = "(http(s)?:\/\/)?(www\.)?(bilibili\.com|b23\.tv)\/(video\/)?(av[0-9]*|BV[A-Za-z0-9]*|[A-Za-z0-9]*)"
     match = re.match(pattern, uri)

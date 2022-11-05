@@ -7,8 +7,13 @@
 
 功能:傅里叶级数
 运行条件:安装manim
+
+manim -pql scene.py CreateCircle
+manim -pql 07.py CreateCircle
 """
-from manim.imports import *
+from manim import *
+
+r'''
 from fourier_series import FourierCirclesScene
 
 
@@ -22,3 +27,12 @@ class FourierOfPiSymbol(FourierCirclesScene):
         "start_drawn": False,
         "max_circle_stroke_width": 1,
     }
+'''
+
+
+class CreateCircle(Scene):
+    def construct(self):
+        circle = Circle()  # create a circle
+        circle.set_fill(PINK, opacity=0.5)  # set the color and transparency
+        self.play(Create(circle))  # show the circle on screen
+

@@ -112,7 +112,7 @@ async def get_av_data(av):
         link = f"https://www.bilibili.com/video/av{avcode}"
         desc = rd['data']['desc']
 
-        msg = (f"标题:{title}" + "\n" + MessageSegment.image(pic)) + f"\n连接: {link}\n\n播放:{view}\n弹幕:{danmaku}\n评论:{reply}\n点赞:{like}\n硬币:{coin}\n收藏:{fav}\n分享:{share}\n\n简介:\n{desc} "
+        msg = (f"标题:{title}" + "\n" + MessageSegment.image(pic)) + f"\n链接: {link}\n\n播放:{view}\n弹幕:{danmaku}\n评论:{reply}\n点赞:{like}\n硬币:{coin}\n收藏:{fav}\n分享:{share}\n\n简介:\n{desc} "
 
 
         print(msg)
