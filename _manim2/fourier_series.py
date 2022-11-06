@@ -1,4 +1,4 @@
-from manim-master.manimlib.imports import *
+from manimlib.imports import *
 # import scipy
 
 

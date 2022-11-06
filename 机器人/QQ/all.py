@@ -165,16 +165,17 @@ mus5 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyi
 mus6 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/Dance Monkey 翻唱.mp3]'
 m1 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/mi1.mp3]'
 m2 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/mi2.mp3]'
+m3 = r'[CQ:record,file=file:/D:/WorkSpace/PC/机器人/None_QQ/kaptreebot/yuyinbao/wyy小短会.mp3]'
 num2309 = 643272204
 num402 = 1143107466
 numtest = 762093001
 numsmy = 3114922938
-send_msg({'msg_type': 'private', 'number': num402,
-          'msg': m1})
-send_msg({'msg_type': 'private', 'number': num402,
-          'msg': m2})
-# send_msg({'msg_type': 'group', 'number': num402,
+# send_msg({'msg_type': 'private', 'number': num402,
 #           'msg': m1})
+# send_msg({'msg_type': 'private', 'number': num402,
+#           'msg': m2})
+send_msg({'msg_type': 'group', 'number': num2309,
+          'msg': m3})
 # send_msg({'msg_type': 'group', 'number': num402,
 #           'msg': m2})
 # send_msg({'msg_type': 'private', 'number': 3051730184,

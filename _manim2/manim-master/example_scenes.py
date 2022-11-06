@@ -13,6 +13,7 @@ from manimlib.imports import *
 # Use -n <number> to skip ahead to the n'th animation of a scene.
 # Use -r <number> to specify a resolution (for example, -r 1080
 # for a 1920x1080 video)
+# python manim.py -m example_scenes.py
 
 
 class OpeningManimExample(Scene):
